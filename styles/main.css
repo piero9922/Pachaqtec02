@@ -1,0 +1,393 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ----------------header-------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo1{
+    background: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+.logo span{
+    border: 2px solid blue;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    left: -15px;
+    z-index: 3;
+    margin: 0;
+    background: white;
+}
+header ul{
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    margin: 20px 50px;
+}
+
+header li{
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 40px;
+    transition: 1s ease all;
+    border-radius: 10px;
+}
+
+header ul li a:hover{
+    background: grey;
+    color: white;
+}
+
+/* -------------------Header terminado */
+
+/* ----------------Blog--------------- */
+
+.blog{
+    background-image: url('/images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.container-blog{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+.container-blog h1{
+    font-size: 30px;
+    color: white;
+    font-weight: lighter;
+}
+
+.container-blog p{
+    padding: 0px 300px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* -----------Blog terminado----------- */
+
+/*-------------------Popular---------------- */
+
+.container-section{
+    padding: 0px 200px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+form{
+    position: relative;
+}
+
+form a{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.search input{
+    width: 650px;
+    padding: 10px 50px;
+    background: #F4F4F4;
+    border-radius: 10px;
+    border: none;
+}
+.popular-1 h3{
+    padding: 50px 0;
+    margin: 0;
+}
+
+.popular-text{
+    display: flex;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-text h1{
+    font-size: 36px;
+    margin: 0 0 30px 0;
+    color: #1F3F68;
+}
+
+.container-text p{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.img-01 img{
+    width: 540px;
+    height: 380px;
+}
+
+.container-text .coment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.container-text .names p{
+    margin: 0;
+}
+.container-text .names p:nth-last-of-type(2){
+    color: #1F3F68;
+    font-weight: bolder;
+}
+.container-text .names p:nth-last-of-type(1){
+    opacity: 0.4;
+}
+
+.coment .entradas a{
+    margin-right: 20px;
+}
+
+.container-popular{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.container-popular h2{
+    color: #1F3F68;
+    font-size: 22px;
+}
+
+.container-popular p{
+    font-size: 15px;
+}
+
+.container-text2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-text2 .text-2 p:nth-last-of-type(2){
+    color: #1F3F68;
+    font-weight: bolder;
+}
+.container-text2 .text-2 p:nth-last-of-type(1){
+    opacity: 0.4;
+}
+
+.container-text2 .entradas2 img{
+    margin-right: 20px;
+}
+
+footer{
+    padding-top: 70px;
+}
+
+footer p{
+    display: flex;
+    justify-content: flex-end;
+    color: #356EAD;
+    text-transform: uppercase;
+}
+
+/* --------------Popular Terminado----------- */
+
+/* -----------Article------------------ */
+
+.article h2{
+    padding: 50px 0;
+}
+
+.container-articles{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 20px;
+}
+
+.container-articles .articles{
+    display: flex;
+}
+
+.text-3{
+    margin-left: 20px;
+}
+
+.text-3 h3{
+    color: #1F3F68;
+    font-size: 19px;
+}
+
+.text-3 p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.text-3 .comet-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-3 .comet-2 p{
+    margin: 0;
+}
+
+.text-3 .comet-2 p:nth-of-type(1){
+    color: #1F3F68;
+}
+
+.text-3 .comet-2 p:nth-of-type(2){
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.entradas-2 a{
+    margin-right: 30px;
+}
+
+/* ----------------------Article Finalizado------------ */
+
+/* ---------------------Team----------------------- */
+
+
+.team{
+    background-image: url('/images/Rectangle\ 4.png');
+    border-top-right-radius: 200px;
+    margin-top: 50px;
+}
+
+.team .team-1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0;
+}
+
+.team-1 h1{
+    font-size: 30px;
+    font-weight: lighter;
+    color: white;
+}
+
+.team-1 p{
+    width: 500px;
+    opacity: 0.6;
+    color: white;
+    font-size: 15px;
+}
+
+.team-1 form{
+    display: flex;
+    align-items: center;
+}
+
+.team-1 form button{
+    padding: 10px 40px;
+    background: #5A98D0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 1s ease all;
+    color: white;
+}
+
+.team-1 form button:hover{
+    background: silver;
+    color: black;
+
+}
+
+.container-social{
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    color: white;
+}
+
+
+.logo2{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.logo2 .logo3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #98C3E8;
+    position: absolute;
+}
+
+.team-2{
+    margin-top: 20px;
+}
+
+.team-2 span{
+    width: 27px;
+    height: 27px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid blue;
+    left: 10px;
+    top: 1px;
+    color: black;
+}
+
+.logo2 .afrianska h3{
+    width: 210px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    padding-top: 5px;
+    color: white;
+    font-weight: lighter;
+}
+
+
+.team-2 p:nth-of-type(1){
+    width: 300px;
+    margin-top: 30  px;
+}
+.team-2 p:nth-of-type(2){
+    width: 240px;
+}
+.team-2 p:nth-of-type(3){
+    width: 270px;
+}
+
+/* -----------------Team Finalizado */
+
+
